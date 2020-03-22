@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>code-server</Name>
-  <Repository>linuxserver/code-server</Repository>
+  <Repository>n8detar/code-server</Repository>
   <Registry>https://hub.docker.com/r/linuxserver/code-server/</Registry>
   <Network>bridge</Network>
   <MyIP/>
