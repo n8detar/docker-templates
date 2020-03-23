@@ -32,11 +32,13 @@
   </Networking>
   <Data>
     <Volume>
+      <Name>Config Location</Name>
       <HostDir></HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
+      <Name>AppData</Name>
       <HostDir></HostDir>
       <ContainerDir>/appdata</ContainerDir>
       <Mode>rw</Mode>
@@ -66,7 +68,7 @@
   </Environment>
   <Labels/>
   <Config Name="Webui" Target="8443" Default="" Mode="tcp" Description="Webui Port - Default 8443" Type="Port" Display="always" Required="true" Mask="false"></Config>
-  <Config Name="Config" Target="/config" Default="" Mode="rw" Description="Config - /config" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Config Location" Target="/config" Default="" Mode="rw" Description="Config - /config" Type="Path" Display="always" Required="true" Mask="false"></Config>
   <Config Name="Appdata" Target="/appdata" Default="" Mode="rw" Description="Appdata - /appdata" Type="Path" Display="always" Required="true" Mask="false"></Config>
   <Config Name="Password" Target="PASSWORD" Default="" Mode="" Description="Optional web gui password, if not provided, there will be no auth" Type="Variable" Display="always" Required="false" Mask="true"/>
   <Config Name="Sudo Password" Target="SUDO_PASSWORD" Default="" Mode="" Description="If this optional variable is set, user will have sudo access in the code-server terminal with the specified password." Type="Variable" Display="always" Required="false" Mask="true"/>  
