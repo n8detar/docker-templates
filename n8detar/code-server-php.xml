@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>code-server-php</Name>
   <Repository>n8detar/code-server</Repository>
-  <Registry>https://hub.docker.com/r/linuxserver/code-server/</Registry>
+  <Registry>https://hub.docker.com/r/n8detar/code-server/</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
