@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Deepstack</Name>
+  <Repository>deepquestai/deepstack:gpu</Repository>
+  <Registry>https://hub.docker.com/r/deepquestai/deepstack</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://deepquestai.com</Support>
+  <Project>https://hub.docker.com/r/deepquestai/deepstack</Project>
+  <Overview>Deepstack is a service which runs in a docker container and exposes deep-learning models via a REST API. Deepstack object detection uses Yolo V3 to identify 80 different kinds of objects (listed at bottom of this readme), including people (person) and animals. There is no cost for using Deepstack, although you will need a machine with 8 GB RAM.</Overview>
+  <Category>Home Automation: Tools: Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:5000]</WebUI>
+  <TemplateURL>https://gitea.campingfamilyfive.com/ndetar/docker-templates/raw/branch/master/ndetar/Deepstack.xml</TemplateURL>
+  <Icon>https://deepstack.cc/static/img/deepstacklogo.png</Icon>
+  <ExtraParams>--runtime=nvidia</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Deepstack is a service which runs in a docker container and exposes deep-learning models via a REST API. Deepstack object detection uses Yolo V3 to identify 80 different kinds of objects (listed at bottom of this readme), including people (person) and animals. There is no cost for using Deepstack, although you will need a machine with 8 GB RAM.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5000</HostPort>
+        <ContainerPort>5000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/deepstack/</HostDir>
+      <ContainerDir>/datastore</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>True</Value>
+      <Name>VISION-DETECTION</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>API-KEY</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>NVIDIA_VISIBLE_DEVICES</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>all</Value>
+      <Name>NVIDIA_DRIVER_CAPABILITIES</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Config" Target="/datastore" Default="/mnt/user/appdata/deepstack/" Mode="rw" Description="Container Path: /datastore" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/deepstack/</Config>
+  <Config Name="VISION-DETECTION" Target="VISION-DETECTION" Default="True" Mode="" Description="Container Variable: VISION-DETECTION" Type="Variable" Display="always" Required="false" Mask="false">True</Config>
+  <Config Name="API-KEY" Target="API-KEY" Default="" Mode="" Description="Container Variable: API-KEY" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="NVIDIA_VISIBLE_DEVICES" Target="NVIDIA_VISIBLE_DEVICES" Default="" Mode="" Description="Container Variable: NVIDIA_VISIBLE_DEVICES" Type="Variable" Display="always" Required="false" Mask="false">GPU-1e9b0243-5157-8eb2-de55-24d0c0bb52c6</Config>
+  <Config Name="NVIDIA_DRIVER_CAPABILITIES" Target="NVIDIA_DRIVER_CAPABILITIES" Default="all" Mode="" Description="Container Variable: NVIDIA_DRIVER_CAPABILITIES" Type="Variable" Display="always" Required="false" Mask="false">all</Config>
+  <Config Name="WebUI" Target="5000" Default="5000" Mode="tcp" Description="Container Port: 5000" Type="Port" Display="always" Required="true" Mask="false">5000</Config>
+</Container>
