@@ -33,10 +33,10 @@ Copy your [b]GPU UUID[/b] to [b]NVIDIA_VISIBLE_DEVICES.[/b]</Overview>
   <WebUI>http://[IP]:[PORT:5000]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/rroller/unraid-templates/master/ronnieroller.com/deepstack.xml</TemplateURL>
   <Icon>https://deepstack.cc/static/img/deepstacklogo.png</Icon>
-  <ExtraParams>--runtime=nvidia</ExtraParams>
+  <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1608071586</DateInstalled>
+  <DateInstalled>1608071654</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>DeepStack is an AI server that empowers every developer in the world to easily build state-of-the-art AI systems both on premise and in the cloud. The promises of Artificial Intelligence are huge but becoming a machine learning engineer is hard. Build and deploy AI powered applications with in-built and custom AI APIs, all offline and self-hosted. See https://deepstack.cc&#xD;
