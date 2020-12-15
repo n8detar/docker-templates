@@ -31,7 +31,7 @@ Add [b]--runtime=nvidia[/b] is in the [b]"Extra Parameters:"[/b] field (switch o
 Copy your [b]GPU UUID[/b] to [b]NVIDIA_VISIBLE_DEVICES.[/b]</Overview>
   <Category>HomeAutomation: Tools: Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:5000]</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/rroller/unraid-templates/master/ronnieroller.com/deepstack.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/n8detar/docker-templates/master/n8detar/deepstack.xml</TemplateURL>
   <Icon>https://deepstack.cc/static/img/deepstacklogo.png</Icon>
   <ExtraParams/>
   <PostArgs/>
