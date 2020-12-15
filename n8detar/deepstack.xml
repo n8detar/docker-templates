@@ -38,7 +38,6 @@ Copy your [b]GPU UUID[/b] to [b]NVIDIA_VISIBLE_DEVICES.[/b]</Overview>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1608072480</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>DeepStack is an AI server that empowers every developer in the world to easily build state-of-the-art AI systems both on premise and in the cloud. The promises of Artificial Intelligence are huge but becoming a machine learning engineer is hard. Build and deploy AI powered applications with in-built and custom AI APIs, all offline and self-hosted. See https://deepstack.cc&#xD;
