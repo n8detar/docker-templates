@@ -31,12 +31,12 @@ Add [b]--runtime=nvidia[/b] is in the [b]"Extra Parameters:"[/b] field (switch o
 Copy your [b]GPU UUID[/b] to [b]NVIDIA_VISIBLE_DEVICES.[/b]</Overview>
   <Category>HomeAutomation: Tools: Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:5000]</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/n8detar/docker-templates/master/n8detar/deepstack.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/rroller/unraid-templates/master/ronnieroller.com/deepstack.xml</TemplateURL>
   <Icon>https://deepstack.cc/static/img/deepstacklogo.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1608071892</DateInstalled>
+  <DateInstalled>1608072242</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>DeepStack is an AI server that empowers every developer in the world to easily build state-of-the-art AI systems both on premise and in the cloud. The promises of Artificial Intelligence are huge but becoming a machine learning engineer is hard. Build and deploy AI powered applications with in-built and custom AI APIs, all offline and self-hosted. See https://deepstack.cc&#xD;
@@ -88,6 +88,11 @@ Copy your [b]GPU UUID[/b] to [b]NVIDIA_VISIBLE_DEVICES.[/b]</Description>
       <Mode/>
     </Variable>
     <Variable>
+      <Value>Medium</Value>
+      <Name>MODE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
       <Value/>
       <Name>NVIDIA_VISIBLE_DEVICES</Name>
       <Mode/>
@@ -97,18 +102,13 @@ Copy your [b]GPU UUID[/b] to [b]NVIDIA_VISIBLE_DEVICES.[/b]</Description>
       <Name>NVIDIA_DRIVER_CAPABILITIES</Name>
       <Mode/>
     </Variable>
-    <Variable>
-      <Value>Medium</Value>
-      <Name>MODE</Name>
-      <Mode/>
-    </Variable>
   </Environment>
   <Labels/>
   <Config Name="Webui" Target="5000" Default="5000" Mode="tcp" Description="For access to the Web UI and API" Type="Port" Display="always" Required="true" Mask="false">5000</Config>
-  <Config Name="datastore path" Target="/datastore" Default="" Mode="rw" Description="Container Path: /datastore" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/deepstack</Config>
+  <Config Name="AppData:" Target="/datastore" Default="" Mode="rw" Description="Container Path: /datastore" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/deepstack</Config>
   <Config Name="VISION-DETECTION" Target="VISION-DETECTION" Default="True|False" Mode="" Description="This enables the object detection API." Type="Variable" Display="always" Required="false" Mask="false">True</Config>
   <Config Name="VISION-FACE" Target="VISION-FACE" Default="True|False" Mode="" Description="This enables the face recognition APIs." Type="Variable" Display="always" Required="false" Mask="false">False</Config>
+  <Config Name="Performance Mode" Target="MODE" Default="Hight|Medium|Low" Mode="" Description="DeepStack offers three modes allowing you to tradeoff speed for performance. You can specify performance mode to be High, Medium and Low." Type="Variable" Display="always" Required="false" Mask="false">Medium</Config>
   <Config Name="Nvidia Visible Devices" Target="NVIDIA_VISIBLE_DEVICES" Default="" Mode="" Description="Nvidia Visible Devices (Requires Nvidia GPU and Unraid Nvidia drivers)" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Nvidia Driver Capabilities" Target="NVIDIA_DRIVER_CAPABILITIES" Default="" Mode="" Description="Nvidia Driver Capabilities (Requires Nvidia GPU and Unraid Nvidia drivers)" Type="Variable" Display="always" Required="false" Mask="false">all</Config>
-  <Config Name="Performance Mode" Target="MODE" Default="Hight|Medium|Low" Mode="" Description="DeepStack offers three modes allowing you to tradeoff speed for performance. You can specify performance mode to be High, Medium and Low." Type="Variable" Display="always" Required="false" Mask="false">Medium</Config>
 </Container>
