@@ -15,14 +15,14 @@
 To use with home assistant see: https://github.com/robmarkcole/HASS-Deepstack-object#hass-deepstack-object&#xD;
 [br]&#xD;
 [br]&#xD;
-[b][u][span style='color: #E80000;']CPUs without AVX[/span][/u][/b]&#xD;
+[b][u][span style='color: #E80000;']Old CPUs without AVX[/span][/u][/b]&#xD;
 [br]&#xD;
  If you are using an older cpu that dosn't support AVX add [b]:noavx[/b] to the end of the [b]"Repository:"[/b] field (switch on advanced view). Should look like this: [b]deepquestai/deepstack:noavx[/b]&#xD;
 [br]&#xD;
 [br]&#xD;
 [b][u][span style='color: #E80000;']Nvidia GPU Use[/span][/u][/b]&#xD;
 [br]&#xD;
-Install Unraid Nvidia Plugin to install Nvidia Drivers.&#xD;
+Install Unraid Nvidia Plugin to install Nvidia Drivers: [b]https://forums.unraid.net/topic/98978-plugin-nvidia-driver/[/b]&#xD;
 [br] &#xD;
 Add [b]:gpu[/b] to the end of the [b]"Repository:"[/b] field (switch on advanced view). Should look like this: [b]deepquestai/deepstack:gpu[/b]&#xD;
 [br]&#xD;
@@ -36,7 +36,7 @@ Copy your [b]GPU UUID[/b] to [b]NVIDIA_VISIBLE_DEVICES.[/b]</Overview>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1608071654</DateInstalled>
+  <DateInstalled>1608071892</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>DeepStack is an AI server that empowers every developer in the world to easily build state-of-the-art AI systems both on premise and in the cloud. The promises of Artificial Intelligence are huge but becoming a machine learning engineer is hard. Build and deploy AI powered applications with in-built and custom AI APIs, all offline and self-hosted. See https://deepstack.cc&#xD;
@@ -45,14 +45,14 @@ Copy your [b]GPU UUID[/b] to [b]NVIDIA_VISIBLE_DEVICES.[/b]</Overview>
 To use with home assistant see: https://github.com/robmarkcole/HASS-Deepstack-object#hass-deepstack-object&#xD;
 [br]&#xD;
 [br]&#xD;
-[b][u][span style='color: #E80000;']CPUs without AVX[/span][/u][/b]&#xD;
+[b][u][span style='color: #E80000;']Old CPUs without AVX[/span][/u][/b]&#xD;
 [br]&#xD;
  If you are using an older cpu that dosn't support AVX add [b]:noavx[/b] to the end of the [b]"Repository:"[/b] field (switch on advanced view). Should look like this: [b]deepquestai/deepstack:noavx[/b]&#xD;
 [br]&#xD;
 [br]&#xD;
 [b][u][span style='color: #E80000;']Nvidia GPU Use[/span][/u][/b]&#xD;
 [br]&#xD;
-Install Unraid Nvidia Plugin to install Nvidia Drivers.&#xD;
+Install Unraid Nvidia Plugin to install Nvidia Drivers: [b]https://forums.unraid.net/topic/98978-plugin-nvidia-driver/[/b]&#xD;
 [br] &#xD;
 Add [b]:gpu[/b] to the end of the [b]"Repository:"[/b] field (switch on advanced view). Should look like this: [b]deepquestai/deepstack:gpu[/b]&#xD;
 [br]&#xD;
