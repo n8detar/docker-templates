@@ -66,7 +66,7 @@ Copy your [b]GPU UUID[/b] to [b]NVIDIA_VISIBLE_DEVICES.[/b]</Description>
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>5001</HostPort>
+        <HostPort>5000</HostPort>
         <ContainerPort>5000</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
