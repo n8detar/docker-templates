@@ -38,6 +38,7 @@ Copy your [b]GPU UUID[/b] to [b]NVIDIA_VISIBLE_DEVICES.[/b]</Overview>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
+  <DateInstalled>1608073415</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>DeepStack is an AI server that empowers every developer in the world to easily build state-of-the-art AI systems both on premise and in the cloud. The promises of Artificial Intelligence are huge but becoming a machine learning engineer is hard. Build and deploy AI powered applications with in-built and custom AI APIs, all offline and self-hosted. See https://deepstack.cc&#xD;
@@ -107,7 +108,7 @@ Copy your [b]GPU UUID[/b] to [b]NVIDIA_VISIBLE_DEVICES.[/b]</Description>
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="Webui" Target="5000" Default="5000" Mode="tcp" Description="For access to the Web UI and API" Type="Port" Display="always" Required="true" Mask="false">5001</Config>
+  <Config Name="Webui" Target="5000" Default="5000" Mode="tcp" Description="For access to the Web UI and API" Type="Port" Display="always" Required="true" Mask="false">5000</Config>
   <Config Name="AppData:" Target="/datastore" Default="" Mode="rw" Description="Container Path: /datastore" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/deepstack</Config>
   <Config Name="VISION-DETECTION" Target="VISION-DETECTION" Default="True|False" Mode="" Description="This enables the object detection API." Type="Variable" Display="always" Required="false" Mask="false">True</Config>
   <Config Name="VISION-FACE" Target="VISION-FACE" Default="True|False" Mode="" Description="This enables the face recognition APIs." Type="Variable" Display="always" Required="false" Mask="false">False</Config>
