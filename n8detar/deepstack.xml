@@ -92,6 +92,11 @@ Copy your [b]GPU UUID[/b] to [b]NVIDIA_VISIBLE_DEVICES.[/b]</Description>
       <Mode/>
     </Variable>
     <Variable>
+      <Value>False</Value>
+      <Name>VISION-SCENE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
       <Value>Medium</Value>
       <Name>MODE</Name>
       <Mode/>
@@ -110,8 +115,9 @@ Copy your [b]GPU UUID[/b] to [b]NVIDIA_VISIBLE_DEVICES.[/b]</Description>
   <Labels/>
   <Config Name="WebUI" Target="5000" Default="5000" Mode="tcp" Description="For access to the Web UI and API. Default is 5000." Type="Port" Display="always" Required="true" Mask="false">5000</Config>
   <Config Name="AppData" Target="/datastore" Default="/mnt/user/appdata/deepstack" Mode="rw" Description="Container Path: /datastore" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/deepstack</Config>
-  <Config Name="Vision Detection" Target="VISION-DETECTION" Default="True|False" Mode="" Description="This enables the object detection API. Default is False. (VISION-DETECTION)" Type="Variable" Display="always" Required="false" Mask="false">False</Config>
-  <Config Name="Face Vision" Target="VISION-FACE" Default="True|False" Mode="" Description="This enables the face recognition APIs. Default is False. (VISION-FACE)" Type="Variable" Display="always" Required="false" Mask="false">False</Config>
+  <Config Name="Object Detection" Target="VISION-DETECTION" Default="True|False" Mode="" Description="This enables the object detection API. Default is False. (VISION-DETECTION)" Type="Variable" Display="always" Required="false" Mask="false">False</Config>
+  <Config Name="Face Detection" Target="VISION-FACE" Default="True|False" Mode="" Description="This enables the face recognition APIs. Default is False. (VISION-FACE)" Type="Variable" Display="always" Required="false" Mask="false">False</Config>
+  <Config Name="Scene Detection" Target="VISION-SCENE" Default="True|False" Mode="" Description="This enables the scene recognition APIs. Default is False. (VISION-FACE)" Type="Variable" Display="always" Required="false" Mask="false">False</Config>
   <Config Name="Performance Mode" Target="MODE" Default="High|Medium|Low" Mode="" Description="DeepStack offers three modes allowing you to tradeoff speed for performance. You can specify performance mode to be High, Medium and Low. Default is Medium. (MODE)" Type="Variable" Display="always" Required="false" Mask="false">Medium</Config>
   <Config Name="Nvidia Visible Devices" Target="NVIDIA_VISIBLE_DEVICES" Default="" Mode="" Description="Requires Nvidia GPU and Unraid Nvidia drivers. (NVIDIA_VISIBLE_DEVICES)" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Nvidia Driver Capabilities" Target="NVIDIA_DRIVER_CAPABILITIES" Default="all " Mode="" Description="Requires Nvidia GPU and Unraid Nvidia drivers. Default is all. (NVIDIA_DRIVER_CAPABILITIES)" Type="Variable" Display="always" Required="false" Mask="false">all</Config>
