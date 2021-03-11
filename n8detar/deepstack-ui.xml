@@ -9,21 +9,21 @@
   <Privileged>false</Privileged>
   <Support/>
   <Project>https://github.com/robmarkcole/deepstack-ui</Project>
-  <Overview>UI for working with Deepstack. Allows uploading an image and performing object detection with Deepstack. The effect of various parameters can be explored, including filtering the classes of object detected, filtering by minimum confidence, and spatial filtering using a region of interest (ROI). Created by robmarkcole.&#xD;
+  <Overview>UI for working with Deepstack. Allows uploading an image and performing object detection or face recognition with Deepstack. Also faces can be registered with Deepstack. The effect of various parameters can be explored, including filtering objects by confidence, type and location in the image. Created by robmarkcole.&#xD;
 [br]&#xD;
 https://github.com/robmarkcole/deepstack-ui&#xD;
 </Overview>
-  <Category>HomeAutomation: Tools: Status:Stable</Category>
+  <Category>HomeAutomation: Tools: Other: Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:8501]</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/n8detar/docker-templates/master/n8detar/deepstack-ui.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/n8detar/docker-templates/master/n8detar/images/deepstack-ui.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1609369598</DateInstalled>
+  <DateInstalled>1615504830</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Description>UI for working with Deepstack. Allows uploading an image and performing object detection with Deepstack. The effect of various parameters can be explored, including filtering the classes of object detected, filtering by minimum confidence, and spatial filtering using a region of interest (ROI). Created by robmarkcole.&#xD;
+  <Description>UI for working with Deepstack. Allows uploading an image and performing object detection or face recognition with Deepstack. Also faces can be registered with Deepstack. The effect of various parameters can be explored, including filtering objects by confidence, type and location in the image. Created by robmarkcole.&#xD;
 [br]&#xD;
 https://github.com/robmarkcole/deepstack-ui&#xD;
 </Description>
@@ -64,6 +64,11 @@ https://github.com/robmarkcole/deepstack-ui&#xD;
       <Name>DEEPSTACK_CUSTOM_MODEL</Name>
       <Mode/>
     </Variable>
+    <Variable>
+      <Value>False</Value>
+      <Name>DEEPSTACK_UI_DEBUG_MODE</Name>
+      <Mode/>
+    </Variable>
   </Environment>
   <Labels/>
   <Config Name="WebUI" Target="8501" Default="8501" Mode="tcp" Description="For access to the Web UI. Default is 8501." Type="Port" Display="always" Required="true" Mask="false">8501</Config>
@@ -72,4 +77,5 @@ https://github.com/robmarkcole/deepstack-ui&#xD;
   <Config Name="Deepstack API Key" Target="DEEPSTACK_API_KEY" Default="" Mode="" Description="The API key of your deepstack instance, if you have set one. (DEEPSTACK_API_KEY)" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Deepstack Timeout" Target="DEEPSTACK_TIMEOUT" Default="10" Mode="" Description="The timeout to wait for deepstack. Default is 10 seconds. (DEEPSTACK_TIMEOUT)" Type="Variable" Display="always" Required="false" Mask="false">10</Config>
   <Config Name="Deepstack Custom Model" Target="DEEPSTACK_CUSTOM_MODEL" Default="" Mode="" Description="The name of a custom model, if you wish to use one. (DEEPSTACK_CUSTOM_MODEL)" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Deepstack UI Debug Mode" Target="DEEPSTACK_UI_DEBUG_MODE" Default="False|True" Mode="" Description="Lowers the minimum confidence threshold to 1%. Default is False. (DEEPSTACK_UI_DEBUG_MODE)" Type="Variable" Display="always" Required="false" Mask="false">False</Config>
 </Container>
