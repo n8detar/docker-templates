@@ -9,7 +9,7 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/101947-support-ptrfrll-docker-images/</Support>
   <Project>https://github.com/meeb/tubesync</Project>
-  <Overview>&amp;lt;b&amp;gt;This is a preview release of TubeSync, it may contain bugs but should be usable.&amp;lt;/b&amp;gt;&#xD;
+  <Overview>&amp;lt;b&amp;gt;This is a preview release of TubeSync, it may contain bugs but should be usable.&amp;lt;/b&amp;gt; v0.9.1&#xD;
 &amp;lt;br&amp;gt;&#xD;
 &amp;lt;br&amp;gt;&#xD;
 TubeSync is a PVR (personal video recorder) for YouTube. Or, like Sonarr but for YouTube (with a built-in download client). It is designed to synchronize channels and playlists from YouTube to local directories and update your media server once media is downloaded.</Overview>
@@ -23,7 +23,7 @@ TubeSync is a PVR (personal video recorder) for YouTube. Or, like Sonarr but for
   <DateInstalled>1616103165</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Description>&amp;lt;b&amp;gt;This is a preview release of TubeSync, it may contain bugs but should be usable.&amp;lt;/b&amp;gt;&#xD;
+  <Description>&amp;lt;b&amp;gt;This is a preview release of TubeSync, it may contain bugs but should be usable.&amp;lt;/b&amp;gt; v0.9.1&#xD;
 &amp;lt;br&amp;gt;&#xD;
 &amp;lt;br&amp;gt;&#xD;
 TubeSync is a PVR (personal video recorder) for YouTube. Or, like Sonarr but for YouTube (with a built-in download client). It is designed to synchronize channels and playlists from YouTube to local directories and update your media server once media is downloaded.</Description>
@@ -39,13 +39,13 @@ TubeSync is a PVR (personal video recorder) for YouTube. Or, like Sonarr but for
   </Networking>
   <Data>
     <Volume>
-      <HostDir/>
-      <ContainerDir>/downloads</ContainerDir>
+      <HostDir>/mnt/user/appdata/tubesync</HostDir>
+      <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/appdata/tubesync</HostDir>
-      <ContainerDir>/config</ContainerDir>
+      <HostDir/>
+      <ContainerDir>/downloads</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
@@ -82,6 +82,7 @@ TubeSync is a PVR (personal video recorder) for YouTube. Or, like Sonarr but for
     </Variable>
   </Environment>
   <Labels/>
+  <Config Name="AppData Config" Target="/config" Default="/mnt/user/appdata/tubesync" Mode="rw" Description="AppData config path. Default is /mnt/user/appdata/tubesync. Container Path: /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/tubesync</Config>
   <Config Name="Downloads" Target="/downloads" Default="" Mode="rw" Description="Path to store downloaded content. Container Path: /downloads" Type="Path" Display="always" Required="false" Mask="false"/>
   <Config Name="TubeSync WebUI" Target="4848" Default="" Mode="tcp" Description="TubeSync WebUI port. Default is 4848. Container port is 4848." Type="Port" Display="always" Required="false" Mask="false">4848</Config>
   <Config Name="TubeSync Workers" Target="TUBESYNC_WORKERS" Default="2" Mode="" Description="If you add a significant amount of " Type="Variable" Display="always" Required="false" Mask="false">2</Config>
@@ -90,5 +91,4 @@ TubeSync is a PVR (personal video recorder) for YouTube. Or, like Sonarr but for
   <Config Name="TubeSync Debugging" Target="TUBESYNC_DEBUG" Default="False|True" Mode="" Description="Enable debugging. Default is False. (TUBESYNC_DEBUG)" Type="Variable" Display="advanced" Required="false" Mask="false">False</Config>
   <Config Name="PUID" Target="PUID" Default="" Mode="" Description="UID for permissions. Do not change unless you know what you're doing." Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="" Mode="" Description="GID for permissions. Do not change unless you know what you're doing." Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
-  <Config Name="Host Path 1" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/tubesync</Config>
 </Container>
