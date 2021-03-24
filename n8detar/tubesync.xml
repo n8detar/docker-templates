@@ -17,14 +17,14 @@
 &amp;lt;b&amp;gt;NOTE: the :latest tag does exist, but will contain in-development commits and may be broken. Use at your own risk.&amp;lt;/b&amp;gt;&#xD;
 &#xD;
 </Overview>
-  <Category>Downloaders: MediaApp:Video MediaServer:Video Status:Beta</Category>
+  <Category>Downloaders: MediaApp:Video MediaServer:Video</Category>
   <WebUI>http://[IP]:[PORT:4848]/</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/PTRFRLL/unraid-templates/master/tubesync/tubesync.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/n8detar/docker-templates/master/n8detar/tubesync.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/meeb/tubesync/main/tubesync/common/static/images/tubesync.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1616103165</DateInstalled>
+  <DateInstalled>1616608226</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>TubeSync is a PVR (personal video recorder) for YouTube. Or, like Sonarr but for YouTube (with a built-in download client). It is designed to synchronize channels and playlists from YouTube to local directories and update your media server once media is downloaded.&#xD;
@@ -90,9 +90,9 @@
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="AppData Config" Target="/config" Default="/mnt/user/appdata/tubesync" Mode="rw" Description="AppData config path. Default is /mnt/user/appdata/tubesync. Container Path: /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/tubesync</Config>
-  <Config Name="Downloads" Target="/downloads" Default="" Mode="rw" Description="Path to store downloaded content. Container Path: /downloads" Type="Path" Display="always" Required="false" Mask="false"/>
-  <Config Name="TubeSync WebUI" Target="4848" Default="" Mode="tcp" Description="TubeSync WebUI port. Default is 4848. Container port is 4848." Type="Port" Display="always" Required="false" Mask="false">4848</Config>
+  <Config Name="AppData Config" Target="/config" Default="/mnt/user/appdata/tubesync" Mode="rw" Description="Config storage path. Default is /mnt/user/appdata/tubesync. (Container Path: /config)" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/tubesync</Config>
+  <Config Name="Downloads" Target="/downloads" Default="" Mode="rw" Description="Path to store downloaded content. Default is none. (Container Path: /downloads)" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="TubeSync WebUI" Target="4848" Default="" Mode="tcp" Description="TubeSync WebUI port. Default is 4848. (Container port: 4848)" Type="Port" Display="always" Required="false" Mask="false">4848</Config>
   <Config Name="TubeSync Workers" Target="TUBESYNC_WORKERS" Default="2" Mode="" Description="If you add a significant amount of work due to adding many large channels you may need to increase the number of background workers. Try around ~4 at most, although the absolute maximum allowed is 8. Default is 2. (TUBESYNC_WORKERS)" Type="Variable" Display="always" Required="false" Mask="false">2</Config>
   <Config Name="TubeSync WebUI Username" Target="HTTP_USER" Default="" Mode="" Description="Sets the username for HTTP basic authentication. Default is none. (HTTP_USER)" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="TubeSync WebUI Password" Target="HTTP_PASS" Default="" Mode="" Description="Sets the password for HTTP basic authentication. Default is none. (HTTP_PASS)" Type="Variable" Display="always" Required="false" Mask="true"/>
