@@ -140,4 +140,4 @@ Copy your [b]GPU UUID[/b] to [b]NVIDIA_VISIBLE_DEVICES.[/b]</Description>
   <Config Name="Nvidia Visible Devices" Target="NVIDIA_VISIBLE_DEVICES" Default="" Mode="" Description="Requires Nvidia GPU and Unraid Nvidia drivers. (NVIDIA_VISIBLE_DEVICES)" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Nvidia Driver Capabilities" Target="NVIDIA_DRIVER_CAPABILITIES" Default="all " Mode="" Description="Requires Nvidia GPU and Unraid Nvidia drivers. Default is all. (NVIDIA_DRIVER_CAPABILITIES)" Type="Variable" Display="always" Required="false" Mask="false">all</Config>
 </Container>
-</Container>
+
