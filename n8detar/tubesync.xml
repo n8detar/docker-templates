@@ -17,14 +17,14 @@
 &amp;lt;b&amp;gt;NOTE: the :latest tag does exist, but will contain in-development commits and may be broken. Use at your own risk.&amp;lt;/b&amp;gt;&#xD;
 &#xD;
 </Overview>
-  <Category>Downloaders: MediaApp:Video MediaServer:Video</Category>
+  <Category>Downloaders: MediaApp:Video MediaServer:Video Status:Beta</Category>
   <WebUI>http://[IP]:[PORT:4848]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/n8detar/docker-templates/master/n8detar/tubesync.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/meeb/tubesync/main/tubesync/common/static/images/tubesync.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1616608226</DateInstalled>
+  <DateInstalled>1616608459</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>TubeSync is a PVR (personal video recorder) for YouTube. Or, like Sonarr but for YouTube (with a built-in download client). It is designed to synchronize channels and playlists from YouTube to local directories and update your media server once media is downloaded.&#xD;
