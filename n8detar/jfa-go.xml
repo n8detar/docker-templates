@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>jfa-go</Name>
+  <Repository>hrfee/jfa-go</Repository>
+  <Registry>https://hub.docker.com/r/hrfee/jfa-go/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/hrfee/jfa-go</Project>
+  <Overview>jfa-go is a user management app for Jellyfin (and now Emby) that provides invite-based account creation as well as other features that make one's instance much easier to manage.&#xD;
+&#xD;
+\* I am not the creator or maintainer of this container I am merely providing the Unraid template.</Overview>
+  <Category>Tools: Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:8056]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/hrfee/jfa-go/main/images/jfa-go-icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>Jellyfin or Emby</Requires>
+  <Description>jfa-go is a user management app for Jellyfin (and now Emby) that provides invite-based account creation as well as other features that make one's instance much easier to manage.&#xD;
+&#xD;
+\* I am not the creator or maintainer of this container I am merely providing the Unraid template.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8056</HostPort>
+        <ContainerPort>8056</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/jfa-go</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/jellyfin/</HostDir>
+      <ContainerDir>/jf</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/etc/localtime</HostDir>
+      <ContainerDir>/etc/localtime</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="WebUI" Target="8056" Default="8056" Mode="tcp" Description="Port to use to access jfa-go webui." Type="Port" Display="always" Required="true" Mask="false">8056</Config>
+  <Config Name="Config" Target="/data" Default="/mnt/user/appdata/jfa-go" Mode="rw" Description="Path to wherever you want to store the config file and other data." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/jfa-go</Config>
+  <Config Name="Jellfyfin Config Directory" Target="/jf" Default="/mnt/user/appdata/jellyfin/" Mode="rw" Description="Path to Jellyfin config directory, ignore if using Emby." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/jellyfin/</Config>
+  <Config Name="Time" Target="/etc/localtime" Default="/etc/localtime" Mode="ro" Description="" Type="Path" Display="advanced-hide" Required="true" Mask="false">/etc/localtime</Config>
+</Container>
