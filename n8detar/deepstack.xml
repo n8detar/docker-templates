@@ -24,7 +24,7 @@ If you wish to use a NVIDIA GPU instead of your CPU:&#xD;
 1. Install Unraid Nvidia Plugin (available in the community apps store): https://forums.unraid.net/topic/98978-plugin-nvidia-driver/&#xD;
 2. Add **`:gpu`** to the end of the **_`Repository:`_** field. Should look like this: **`deepquestai/deepstack:gpu`**&#xD;
 3. Add **`--runtime=nvidia`** to the **_`Extra Parameters:`_** field (to view this field switch to advanced view by clicking the toggle in the top right next to **`Basic View`**) .&#xD;
-4. Copy your GPU UUID to **_`Nvidia Visible Devices`_**. (Can be found in the Nvidia Driver settings page under **`nVidia Info:`**). Should look something like this: **`GPU-1a2b3456-7890-1cd2-ea34-56b7c8de90a1`**&#xD;
+4. Copy your GPU UUID to **_`Nvidia Visible Devices:`_**. (Can be found in the Nvidia Driver settings page under **`nVidia Info:`**). Should look something like this: **`GPU-1a2b3456-7890-1cd2-ea34-56b7c8de90a1`**&#xD;
 ---&#xD;
 *I am not the creator or maintainer of this container I am merely providing the Unraid template.</Overview>
   <Category>HomeAutomation: Security: Tools: Other: Status:Stable</Category>
@@ -34,7 +34,7 @@ If you wish to use a NVIDIA GPU instead of your CPU:&#xD;
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1633377326</DateInstalled>
+  <DateInstalled>1633377495</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -53,7 +53,7 @@ If you wish to use a NVIDIA GPU instead of your CPU:&#xD;
 1. Install Unraid Nvidia Plugin (available in the community apps store): https://forums.unraid.net/topic/98978-plugin-nvidia-driver/&#xD;
 2. Add **`:gpu`** to the end of the **_`Repository:`_** field. Should look like this: **`deepquestai/deepstack:gpu`**&#xD;
 3. Add **`--runtime=nvidia`** to the **_`Extra Parameters:`_** field (to view this field switch to advanced view by clicking the toggle in the top right next to **`Basic View`**) .&#xD;
-4. Copy your GPU UUID to **_`Nvidia Visible Devices`_**. (Can be found in the Nvidia Driver settings page under **`nVidia Info:`**). Should look something like this: **`GPU-1a2b3456-7890-1cd2-ea34-56b7c8de90a1`**&#xD;
+4. Copy your GPU UUID to **_`Nvidia Visible Devices:`_**. (Can be found in the Nvidia Driver settings page under **`nVidia Info:`**). Should look something like this: **`GPU-1a2b3456-7890-1cd2-ea34-56b7c8de90a1`**&#xD;
 ---&#xD;
 *I am not the creator or maintainer of this container I am merely providing the Unraid template.</Description>
   <Networking>
