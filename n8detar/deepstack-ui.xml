@@ -39,7 +39,7 @@
   <Data/>
   <Environment>
     <Variable>
-      <Value>lo9calhost</Value>
+      <Value>localhost</Value>
       <Name>DEEPSTACK_IP</Name>
       <Mode/>
     </Variable>
