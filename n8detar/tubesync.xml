@@ -10,30 +10,27 @@
   <Support>https://forums.unraid.net/topic/101947-support-ptrfrll-docker-images/</Support>
   <Project>https://github.com/meeb/tubesync</Project>
   <Overview>TubeSync is a PVR (personal video recorder) for YouTube. Or, like Sonarr but for YouTube (with a built-in download client). It is designed to synchronize channels and playlists from YouTube to local directories and update your media server once media is downloaded.&#xD;
-&amp;lt;br&amp;gt;&#xD;
-&amp;lt;br&amp;gt;&#xD;
-&amp;lt;b&amp;gt;This is a preview release of TubeSync, it may contain bugs but should be usable.&amp;lt;/b&amp;gt; Current Version: &amp;lt;b&amp;gt;v0.9.1&amp;lt;/b&amp;gt;&#xD;
-&amp;lt;br&amp;gt;&#xD;
-&amp;lt;b&amp;gt;NOTE: the :latest tag does exist, but will contain in-development commits and may be broken. Use at your own risk.&amp;lt;/b&amp;gt;&#xD;
 &#xD;
+_This is a preview release of TubeSync, it may contain bugs but should be usable._&#xD;
+&#xD;
+*I am not the creator or maintainer of this container I am merely providing the Unraid template.&#xD;
 </Overview>
-  <Category>Downloaders: MediaApp:Video MediaServer:Video Status:Beta</Category>
+  <Category>Downloaders: MediaApp:Video MediaServer:Video</Category>
   <WebUI>http://[IP]:[PORT:4848]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/n8detar/docker-templates/master/n8detar/tubesync.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/meeb/tubesync/main/tubesync/common/static/images/tubesync.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1616608459</DateInstalled>
+  <DateInstalled>1633378992</DateInstalled>
   <DonateText/>
   <DonateLink/>
+  <Requires/>
   <Description>TubeSync is a PVR (personal video recorder) for YouTube. Or, like Sonarr but for YouTube (with a built-in download client). It is designed to synchronize channels and playlists from YouTube to local directories and update your media server once media is downloaded.&#xD;
-&amp;lt;br&amp;gt;&#xD;
-&amp;lt;br&amp;gt;&#xD;
-&amp;lt;b&amp;gt;This is a preview release of TubeSync, it may contain bugs but should be usable.&amp;lt;/b&amp;gt; Current Version: &amp;lt;b&amp;gt;v0.9.1&amp;lt;/b&amp;gt;&#xD;
-&amp;lt;br&amp;gt;&#xD;
-&amp;lt;b&amp;gt;NOTE: the :latest tag does exist, but will contain in-development commits and may be broken. Use at your own risk.&amp;lt;/b&amp;gt;&#xD;
 &#xD;
+_This is a preview release of TubeSync, it may contain bugs but should be usable._&#xD;
+&#xD;
+*I am not the creator or maintainer of this container I am merely providing the Unraid template.&#xD;
 </Description>
   <Networking>
     <Mode>bridge</Mode>
@@ -90,13 +87,13 @@
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="AppData Config" Target="/config" Default="/mnt/user/appdata/tubesync" Mode="rw" Description="Config storage path. Default is /mnt/user/appdata/tubesync. (Container Path: /config)" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/tubesync</Config>
-  <Config Name="Downloads" Target="/downloads" Default="" Mode="rw" Description="Path to store downloaded content. Default is none. (Container Path: /downloads)" Type="Path" Display="always" Required="false" Mask="false"/>
-  <Config Name="TubeSync WebUI" Target="4848" Default="" Mode="tcp" Description="TubeSync WebUI port. Default is 4848. (Container port: 4848)" Type="Port" Display="always" Required="false" Mask="false">4848</Config>
-  <Config Name="TubeSync Workers" Target="TUBESYNC_WORKERS" Default="2" Mode="" Description="If you add a significant amount of work due to adding many large channels you may need to increase the number of background workers. Try around ~4 at most, although the absolute maximum allowed is 8. Default is 2. (TUBESYNC_WORKERS)" Type="Variable" Display="always" Required="false" Mask="false">2</Config>
-  <Config Name="TubeSync WebUI Username" Target="HTTP_USER" Default="" Mode="" Description="Sets the username for HTTP basic authentication. Default is none. (HTTP_USER)" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="TubeSync WebUI Password" Target="HTTP_PASS" Default="" Mode="" Description="Sets the password for HTTP basic authentication. Default is none. (HTTP_PASS)" Type="Variable" Display="always" Required="false" Mask="true"/>
-  <Config Name="TubeSync Debugging" Target="TUBESYNC_DEBUG" Default="False|True" Mode="" Description="Enable debugging. Default is False. (TUBESYNC_DEBUG)" Type="Variable" Display="advanced" Required="false" Mask="false">False</Config>
+  <Config Name="AppData Config" Target="/config" Default="/mnt/user/appdata/tubesync" Mode="rw" Description="Config storage path. Default is /mnt/user/appdata/tubesync." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/tubesync</Config>
+  <Config Name="Downloads" Target="/downloads" Default="" Mode="rw" Description="Path to store downloaded content. Default is none." Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="TubeSync WebUI" Target="4848" Default="" Mode="tcp" Description="TubeSync WebUI port. Default is 4848. " Type="Port" Display="always" Required="false" Mask="false">4848</Config>
+  <Config Name="TubeSync Workers" Target="TUBESYNC_WORKERS" Default="2" Mode="" Description="If you add a significant amount of work due to adding many large channels you may need to increase the number of background workers. Try around ~4 at most, although the absolute maximum allowed is 8. Default is 2." Type="Variable" Display="always" Required="false" Mask="false">2</Config>
+  <Config Name="TubeSync WebUI Username" Target="HTTP_USER" Default="" Mode="" Description="Sets the username for HTTP basic authentication. Default is none." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="TubeSync WebUI Password" Target="HTTP_PASS" Default="" Mode="" Description="Sets the password for HTTP basic authentication. Default is none." Type="Variable" Display="always" Required="false" Mask="true"/>
+  <Config Name="TubeSync Debugging" Target="TUBESYNC_DEBUG" Default="False|True" Mode="" Description="Enable debugging. Default is False. " Type="Variable" Display="advanced" Required="false" Mask="false">False</Config>
   <Config Name="PUID" Target="PUID" Default="" Mode="" Description="UID for permissions. Do not change unless you know what you're doing." Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="" Mode="" Description="GID for permissions. Do not change unless you know what you're doing." Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
 </Container>
