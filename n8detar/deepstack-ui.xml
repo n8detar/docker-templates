@@ -71,7 +71,7 @@
   </Environment>
   <Labels/>
   <Config Name="WebUI" Target="8501" Default="8501" Mode="tcp" Description="For access to the Web UI. Default is 8501." Type="Port" Display="always" Required="true" Mask="false">8501</Config>
-  <Config Name="Deepstack IP" Target="DEEPSTACK_IP" Default="localhost" Mode="" Description="The IP address of your Deepstack instance. Default is localhost." Type="Variable" Display="always" Required="true" Mask="false">lo9calhost</Config>
+  <Config Name="Deepstack IP" Target="DEEPSTACK_IP" Default="localhost" Mode="" Description="The IP address of your Deepstack instance. Default is localhost." Type="Variable" Display="always" Required="true" Mask="false">localhost</Config>
   <Config Name="Deepstack Port" Target="DEEPSTACK_PORT" Default="80" Mode="" Description="The PORT of your Deepstack instance. Default is 80. " Type="Variable" Display="always" Required="true" Mask="false">80</Config>
   <Config Name="Deepstack API Key" Target="DEEPSTACK_API_KEY" Default="" Mode="" Description="The API key of your Deepstack instance, if you have set one." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Deepstack Timeout" Target="DEEPSTACK_TIMEOUT" Default="10" Mode="" Description="The timeout to wait for Deepstack. Default is 10 seconds." Type="Variable" Display="always" Required="false" Mask="false">10</Config>
