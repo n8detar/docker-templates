@@ -34,7 +34,7 @@ If you wish to use a NVIDIA GPU instead of your CPU:&#xD;
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1633377048</DateInstalled>
+  <DateInstalled>1633377192</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -80,7 +80,7 @@ If you wish to use a NVIDIA GPU instead of your CPU:&#xD;
   </Data>
   <Environment>
     <Variable>
-      <Value>True</Value>
+      <Value>False</Value>
       <Name>VISION-DETECTION</Name>
       <Mode/>
     </Variable>
@@ -90,12 +90,12 @@ If you wish to use a NVIDIA GPU instead of your CPU:&#xD;
       <Mode/>
     </Variable>
     <Variable>
-      <Value>True</Value>
+      <Value>False</Value>
       <Name>VISION-SCENE</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value>High</Value>
+      <Value>Medium</Value>
       <Name>MODE</Name>
       <Mode/>
     </Variable>
@@ -124,10 +124,10 @@ If you wish to use a NVIDIA GPU instead of your CPU:&#xD;
   <Config Name="WebUI" Target="5000" Default="5000" Mode="tcp" Description="For access to the Web UI and API. Default is 5000. " Type="Port" Display="always" Required="true" Mask="false">5000</Config>
   <Config Name="AppData" Target="/datastore" Default="/mnt/user/appdata/deepstack" Mode="rw" Description="Config storage path. Default is /mnt/user/appdata/deepstack." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/deepstack</Config>
   <Config Name="Custom Model Store" Target="/modelstore/detection" Default="/mnt/user/appdata/deepstack/custom_models" Mode="rw" Description="This specifies the local directory where you stored your custom models. Default is /mnt/user/appdata/deepstack/custom_models." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/deepstack/custom_models</Config>
-  <Config Name="Object Detection" Target="VISION-DETECTION" Default="True|False" Mode="" Description="This enables the object detection API. Default is False." Type="Variable" Display="always" Required="false" Mask="false">True</Config>
+  <Config Name="Object Detection" Target="VISION-DETECTION" Default="True|False" Mode="" Description="This enables the object detection API. Default is False." Type="Variable" Display="always" Required="false" Mask="false">False</Config>
   <Config Name="Face Detection" Target="VISION-FACE" Default="True|False" Mode="" Description="This enables the face recognition APIs. Default is False. (VISION-FACE)" Type="Variable" Display="always" Required="false" Mask="false">False</Config>
-  <Config Name="Scene Detection" Target="VISION-SCENE" Default="True|False" Mode="" Description="This enables the scene recognition API. Default is False." Type="Variable" Display="always" Required="false" Mask="false">True</Config>
-  <Config Name="Performance Mode" Target="MODE" Default="High|Medium|Low" Mode="" Description="DeepStack offers three modes allowing you to trade off speed for performance. You can specify performance mode to be High, Medium, and Low. Default is Medium." Type="Variable" Display="always" Required="false" Mask="false">High</Config>
+  <Config Name="Scene Detection" Target="VISION-SCENE" Default="True|False" Mode="" Description="This enables the scene recognition API. Default is False." Type="Variable" Display="always" Required="false" Mask="false">False</Config>
+  <Config Name="Performance Mode" Target="MODE" Default="High|Medium|Low" Mode="" Description="Deepstack offers three modes allowing you to trade off speed for performance. You can specify performance mode to be High, Medium, and Low. Default is Medium." Type="Variable" Display="always" Required="false" Mask="false">Medium</Config>
   <Config Name="API Key" Target="API-KEY" Default="" Mode="" Description="API Key is used to protect your API endpoint to prevent unauthorized access." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Admin Key" Target="ADMIN-KEY" Default="" Mode="" Description="The Admin Key protects admin APIs such as adding models, deleting models, list models, backup, and restore." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Nvidia Visible Devices" Target="NVIDIA_VISIBLE_DEVICES" Default="" Mode="" Description="Requires Nvidia GPU and Unraid Nvidia drivers." Type="Variable" Display="always" Required="false" Mask="false"/>
