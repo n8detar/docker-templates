@@ -11,7 +11,7 @@
   <Project>https://github.com/hrfee/jfa-go</Project>
   <Overview>jfa-go is a user management app for Jellyfin (and now Emby) that provides invite-based account creation as well as other features that make one's instance much easier to manage.&#xD;
 &#xD;
-\* I am not the creator or maintainer of this container I am merely providing the Unraid template.</Overview>
+*I am not the creator or maintainer of this container I am merely providing the Unraid template.</Overview>
   <Category>Tools: Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:8056]/</WebUI>
   <TemplateURL/>
@@ -24,7 +24,7 @@
   <Requires>Jellyfin or Emby</Requires>
   <Description>jfa-go is a user management app for Jellyfin (and now Emby) that provides invite-based account creation as well as other features that make one's instance much easier to manage.&#xD;
 &#xD;
-\* I am not the creator or maintainer of this container I am merely providing the Unraid template.</Description>
+*I am not the creator or maintainer of this container I am merely providing the Unraid template.</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
