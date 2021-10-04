@@ -34,7 +34,7 @@ If you wish to use a NVIDIA GPU instead of your CPU:&#xD;
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1633377495</DateInstalled>
+  <DateInstalled>1633377836</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -131,5 +131,5 @@ If you wish to use a NVIDIA GPU instead of your CPU:&#xD;
   <Config Name="API Key" Target="API-KEY" Default="" Mode="" Description="API Key is used to protect your API endpoint to prevent unauthorized access." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Admin Key" Target="ADMIN-KEY" Default="" Mode="" Description="The Admin Key protects admin APIs such as adding models, deleting models, list models, backup, and restore." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Nvidia Visible Devices" Target="NVIDIA_VISIBLE_DEVICES" Default="" Mode="" Description="Requires Nvidia GPU and Unraid Nvidia drivers." Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Nvidia Driver Capabilities" Target="NVIDIA_DRIVER_CAPABILITIES" Default="all " Mode="" Description="Requires Nvidia GPU and Unraid Nvidia drivers. Default is all." Type="Variable" Display="always" Required="false" Mask="false">all</Config>
+  <Config Name="Nvidia Driver Capabilities" Target="NVIDIA_DRIVER_CAPABILITIES" Default="all " Mode="" Description="Requires Nvidia GPU and Unraid Nvidia drivers. Default is all." Type="Variable" Display="advanced" Required="false" Mask="false">all</Config>
 </Container>
