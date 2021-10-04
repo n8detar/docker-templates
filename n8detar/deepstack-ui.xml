@@ -10,9 +10,8 @@
   <Support/>
   <Project>https://github.com/robmarkcole/deepstack-ui</Project>
   <Overview>UI for working with Deepstack. Allows uploading an image and performing object detection or face recognition with Deepstack. Also faces can be registered with Deepstack. The effect of various parameters can be explored, including filtering objects by confidence, type and location in the image. Created by robmarkcole.&#xD;
-[br]&#xD;
-https://github.com/robmarkcole/deepstack-ui&#xD;
-</Overview>
+&#xD;
+*I am not the creator or maintainer of this container I am merely providing the Unraid template.</Overview>
   <Category>HomeAutomation: Tools: Other: Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:8501]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/n8detar/docker-templates/master/n8detar/deepstack-ui.xml</TemplateURL>
@@ -20,13 +19,13 @@ https://github.com/robmarkcole/deepstack-ui&#xD;
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1615504830</DateInstalled>
+  <DateInstalled>1633374516</DateInstalled>
   <DonateText/>
   <DonateLink/>
+  <Requires>Deepstack</Requires>
   <Description>UI for working with Deepstack. Allows uploading an image and performing object detection or face recognition with Deepstack. Also faces can be registered with Deepstack. The effect of various parameters can be explored, including filtering objects by confidence, type and location in the image. Created by robmarkcole.&#xD;
-[br]&#xD;
-https://github.com/robmarkcole/deepstack-ui&#xD;
-</Description>
+&#xD;
+*I am not the creator or maintainer of this container I am merely providing the Unraid template.</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
@@ -40,7 +39,7 @@ https://github.com/robmarkcole/deepstack-ui&#xD;
   <Data/>
   <Environment>
     <Variable>
-      <Value>localhost</Value>
+      <Value>lo9calhost</Value>
       <Name>DEEPSTACK_IP</Name>
       <Mode/>
     </Variable>
@@ -72,10 +71,10 @@ https://github.com/robmarkcole/deepstack-ui&#xD;
   </Environment>
   <Labels/>
   <Config Name="WebUI" Target="8501" Default="8501" Mode="tcp" Description="For access to the Web UI. Default is 8501." Type="Port" Display="always" Required="true" Mask="false">8501</Config>
-  <Config Name="Deepstack IP" Target="DEEPSTACK_IP" Default="localhost" Mode="" Description="The IP address of your deepstack instance. Default is localhost. (DEEPSTACK_IP)" Type="Variable" Display="always" Required="true" Mask="false">localhost</Config>
-  <Config Name="Deepstack Port" Target="DEEPSTACK_PORT" Default="80" Mode="" Description="The PORT of your deepstack instance. Default is 80. (DEEPSTACK_PORT)" Type="Variable" Display="always" Required="true" Mask="false">80</Config>
-  <Config Name="Deepstack API Key" Target="DEEPSTACK_API_KEY" Default="" Mode="" Description="The API key of your deepstack instance, if you have set one. (DEEPSTACK_API_KEY)" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Deepstack Timeout" Target="DEEPSTACK_TIMEOUT" Default="10" Mode="" Description="The timeout to wait for deepstack. Default is 10 seconds. (DEEPSTACK_TIMEOUT)" Type="Variable" Display="always" Required="false" Mask="false">10</Config>
-  <Config Name="Deepstack Custom Model" Target="DEEPSTACK_CUSTOM_MODEL" Default="" Mode="" Description="The name of a custom model, if you wish to use one. (DEEPSTACK_CUSTOM_MODEL)" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Deepstack UI Debug Mode" Target="DEEPSTACK_UI_DEBUG_MODE" Default="False|True" Mode="" Description="Lowers the minimum confidence threshold to 1%. Default is False. (DEEPSTACK_UI_DEBUG_MODE)" Type="Variable" Display="always" Required="false" Mask="false">False</Config>
+  <Config Name="Deepstack IP" Target="DEEPSTACK_IP" Default="localhost" Mode="" Description="The IP address of your Deepstack instance. Default is localhost." Type="Variable" Display="always" Required="true" Mask="false">lo9calhost</Config>
+  <Config Name="Deepstack Port" Target="DEEPSTACK_PORT" Default="80" Mode="" Description="The PORT of your Deepstack instance. Default is 80. " Type="Variable" Display="always" Required="true" Mask="false">80</Config>
+  <Config Name="Deepstack API Key" Target="DEEPSTACK_API_KEY" Default="" Mode="" Description="The API key of your Deepstack instance, if you have set one." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Deepstack Timeout" Target="DEEPSTACK_TIMEOUT" Default="10" Mode="" Description="The timeout to wait for Deepstack. Default is 10 seconds." Type="Variable" Display="always" Required="false" Mask="false">10</Config>
+  <Config Name="Deepstack Custom Model" Target="DEEPSTACK_CUSTOM_MODEL" Default="" Mode="" Description="The name of a custom model, if you wish to use one." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Deepstack UI Debug Mode" Target="DEEPSTACK_UI_DEBUG_MODE" Default="False|True" Mode="" Description="Lowers the minimum confidence threshold to 1%. Default is False." Type="Variable" Display="always" Required="false" Mask="false">False</Config>
 </Container>
