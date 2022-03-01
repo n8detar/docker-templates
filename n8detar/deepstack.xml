@@ -9,9 +9,9 @@
   <Privileged>false</Privileged>
   <Support/>
   <Project>https://deepstack.cc</Project>
-  <Overview>Deepstack is an AI server that empowers every developer in the world to easily build state-of-the-art AI systems both on-premise and in the cloud. The promises of Artificial Intelligence are huge but becoming a machine learning engineer is hard. Build and deploy AI-powered applications with in-built and custom AI APIs, all offline and self-hosted. See https://deepstack.cc&#xD;
+  <Overview>Deepstack is an AI server that empowers every developer in the world to easily build state-of-the-art AI systems both on-premise and in the cloud. The promises of Artificial Intelligence are huge but becoming a machine learning engineer is hard. Build and deploy AI-powered applications with in-built and custom AI APIs, all offline and self-hosted. See https://deepstack.cc and https://docs.deepstack.cc/faq/index.html&#xD;
 &#xD;
-To use with home assistant see: https://github.com/robmarkcole/HASS-Deepstack-object&#xD;
+To use with home assistant see: https://github.com/robmarkcole/HASS-Deepstack-object and https://docs.deepstack.cc/faq/index.html&#xD;
 &#xD;
 ---&#xD;
 **_Old CPUs without AVX:_** If you are using an older CPU that doesn't support AVX  _(Warning: This version hasn't been updated in some time)_:&#xD;
