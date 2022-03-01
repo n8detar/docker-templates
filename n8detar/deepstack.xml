@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>deepstack-nate</Name>
-  <Repository>deepquestai/deepstack:gpu</Repository>
+  <Repository>deepquestai/deepstack</Repository>
   <Registry>https://hub.docker.com/r/deepquestai/deepstack</Registry>
   <Network>bridge</Network>
   <MyIP/>
@@ -31,7 +31,6 @@ To use with home assistant see: https://github.com/robmarkcole/HASS-Deepstack-ob
   <Icon>https://raw.githubusercontent.com/n8detar/docker-templates/master/n8detar/images/deepstack.png</Icon>
   <ExtraParams>--runtime=nvidia</ExtraParams>
   <PostArgs/>
-  <CPUset>1,2,8,9,10</CPUset>
   <DateInstalled>1646154592</DateInstalled>
   <DonateText/>
   <DonateLink/>
