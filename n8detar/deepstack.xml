@@ -31,8 +31,8 @@ To use with home assistant see: https://github.com/robmarkcole/HASS-Deepstack-ob
   <Icon>https://raw.githubusercontent.com/n8detar/docker-templates/master/n8detar/images/deepstack.png</Icon>
   <ExtraParams/>
   <PostArgs/>
-  <CPUset>10</CPUset>
-  <DateInstalled>1646154799</DateInstalled>
+  <CPUset/>
+  <DateInstalled>1646154868</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
