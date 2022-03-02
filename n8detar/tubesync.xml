@@ -22,77 +22,18 @@ _This is a preview release of TubeSync, it may contain bugs but should be usable
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1633378992</DateInstalled>
+  <DateInstalled>1646260006</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Description>TubeSync is a PVR (personal video recorder) for YouTube. Or, like Sonarr but for YouTube (with a built-in download client). It is designed to synchronize channels and playlists from YouTube to local directories and update your media server once media is downloaded.&#xD;
-&#xD;
-_This is a preview release of TubeSync, it may contain bugs but should be usable._&#xD;
-&#xD;
-*I am not the creator or maintainer of this container I am merely providing the Unraid template.&#xD;
-</Description>
-  <Networking>
-    <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort>4848</HostPort>
-        <ContainerPort>4848</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
-  </Networking>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/appdata/tubesync</HostDir>
-      <ContainerDir>/config</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir/>
-      <ContainerDir>/downloads</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
-  <Environment>
-    <Variable>
-      <Value>2</Value>
-      <Name>TUBESYNC_WORKERS</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>HTTP_USER</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>HTTP_PASS</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>False</Value>
-      <Name>TUBESYNC_DEBUG</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>99</Value>
-      <Name>PUID</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>100</Value>
-      <Name>PGID</Name>
-      <Mode/>
-    </Variable>
-  </Environment>
-  <Labels/>
   <Config Name="AppData Config" Target="/config" Default="/mnt/user/appdata/tubesync" Mode="rw" Description="Config storage path. Default is /mnt/user/appdata/tubesync." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/tubesync</Config>
   <Config Name="Downloads" Target="/downloads" Default="" Mode="rw" Description="Path to store downloaded content. Default is none." Type="Path" Display="always" Required="false" Mask="false"/>
   <Config Name="TubeSync WebUI" Target="4848" Default="" Mode="tcp" Description="TubeSync WebUI port. Default is 4848. " Type="Port" Display="always" Required="false" Mask="false">4848</Config>
   <Config Name="TubeSync Workers" Target="TUBESYNC_WORKERS" Default="2" Mode="" Description="If you add a significant amount of work due to adding many large channels you may need to increase the number of background workers. Try around ~4 at most, although the absolute maximum allowed is 8. Default is 2." Type="Variable" Display="always" Required="false" Mask="false">2</Config>
   <Config Name="TubeSync WebUI Username" Target="HTTP_USER" Default="" Mode="" Description="Sets the username for HTTP basic authentication. Default is none." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="TubeSync WebUI Password" Target="HTTP_PASS" Default="" Mode="" Description="Sets the password for HTTP basic authentication. Default is none." Type="Variable" Display="always" Required="false" Mask="true"/>
+  <Config Name="Database" Target="DATABASE_CONNECTION" Default="" Mode="" Description="Optional external database connection details. Ex: mysql://user:pass@host:port/database. Default is none." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Hosts" Target="TUBESYNC_HOSTS" Default="" Mode="" Description="Django's ALLOWED_HOSTS. Ex: tubesync.example.com,otherhost.com. Default is none." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="TubeSync Debugging" Target="TUBESYNC_DEBUG" Default="False|True" Mode="" Description="Enable debugging. Default is False. " Type="Variable" Display="advanced" Required="false" Mask="false">False</Config>
   <Config Name="PUID" Target="PUID" Default="" Mode="" Description="UID for permissions. Do not change unless you know what you're doing." Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="" Mode="" Description="GID for permissions. Do not change unless you know what you're doing." Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
